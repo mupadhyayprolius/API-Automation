@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="1" name="Test">
+    <classes>
+      <class name="vehicles.Getvehicledefects"/>
+      <class name="vehicles.GetWorkshopCompanies"/>
+      <class name="vehicles.Notification_Register"/>
+      <class name="vehicles.forgotPassword"/>
+      <class name="vehicles.Getallvehiclesdetails"/>
+      <class name="vehicles.test"/>
+      <class name="vehicles.Getallvehicles"/>
+      <class name="vehicles.Messages"/>
+      <class name="vehicles.Uploadimage"/>
+      <class name="vehicles.GetVehicleSurveyQuestions"/>
+      <class name="vehicles.Getallvehicleshistory"/>
+      <class name="vehicles.GetVehiclesCheckHistory"/>
+      <class name="vehicles.NewTest"/>
+      <class name="vehicles.Loginapi_credentials"/>
+      <class name="vehicles.SyncApi"/>
+      <class name="vehicles.EntryGateApi"/>
+      <class name="vehicles.LoginAPI"/>
+      <class name="vehicles.getVehicleStatus"/>
+      <class name="vehicles.VehiclesTakeoutSubmitCheck"/>
+      <class name="vehicles.Fetchllmessages"/>
+      <class name="vehicles.Configuration"/>
+      <class name="vehicles.VehiclesReturnSubmitCheck"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

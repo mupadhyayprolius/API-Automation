@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="1" name="Test">
+    <classes>
+      <class name="assets.Configuration"/>
+      <class name="assets.GetAssetSurveyQuestions"/>
+      <class name="assets.LoginAPI"/>
+      <class name="assets.Getallassets"/>
+      <class name="assets.Getalltrailers"/>
+      <class name="assets.AssetResolveDefect"/>
+      <class name="assets.test"/>
+      <class name="assets.EntryGateApi"/>
+      <class name="assets.Notification_Register"/>
+      <class name="assets.AssetTakeoutSubmitCheck"/>
+      <class name="assets.UploadimageAsset"/>
+      <class name="assets.Getallassetsdetails"/>
+      <class name="assets.AssetReturnSubmitCheck"/>
+      <class name="assets.AssetReportDefect"/>
+      <class name="assets.Loginapi_credentials"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-3GH4U15" failures="0" tests="4" name="assets.GetAssetCheckHistory" time="18.644" errors="0" timestamp="1 Jul 2024 09:25:53 GMT">
+  <testcase classname="assets.GetAssetCheckHistory" name="postCofiguration" time="6.279"/>
+  <testcase classname="assets.GetAssetCheckHistory" name="getallasets" time="9.597"/>
+  <testcase classname="assets.GetAssetCheckHistory" name="getallasetsdetails" time="1.646"/>
+  <testcase classname="assets.GetAssetCheckHistory" name="GetAssetCheckHistory" time="1.063"/>
+</testsuite>

@@ -1,0 +1,366 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>40/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 01 15:03:39 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>125 seconds (125150 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='assets.test.ConfigurationAPI()'><b>ConfigurationAPI</b><br>Test class: assets.test</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;These credentials do not match our records.&gt; but was:&lt;null&gt;
+	at assets.test.ConfigurationAPI(test.java:42)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1556841942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1556841942'><pre>java.lang.AssertionError: expected:&lt;These credentials do not match our records.&gt; but was:&lt;null&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at assets.test.ConfigurationAPI(test.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1172)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>assets.test@19e4653c</td></tr>
+<tr>
+<td title='assets.Notification_Register.notificationRegistration()'><b>notificationRegistration</b><br>Test class: assets.Notification_Register</td>
+<td><div><pre>java.lang.AssertionError: Received a 200 response expected:&lt;200&gt; but was:&lt;400&gt;
+	at assets.Notification_Register.notificationRegistration(Notification_Register.java:39)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2065196426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2065196426'><pre>java.lang.AssertionError: Received a 200 response expected:&lt;200&gt; but was:&lt;400&gt;
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:365)
+	at assets.Notification_Register.notificationRegistration(Notification_Register.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1172)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>assets.Notification_Register@74e28667</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='assets.AssetTakeoutSubmitCheck.Assettakeoutsubmitcheck()'><b>Assettakeoutsubmitcheck</b><br>Test class: assets.AssetTakeoutSubmitCheck</td>
+<td></td>
+<td>0</td>
+<td>assets.AssetTakeoutSubmitCheck@202b0582</td></tr>
+<tr>
+<td title='assets.AssetReturnSubmitCheck.Assettakeoutsubmitcheck()'><b>Assettakeoutsubmitcheck</b><br>Test class: assets.AssetReturnSubmitCheck</td>
+<td></td>
+<td>0</td>
+<td>assets.AssetReturnSubmitCheck@3b0fe47a</td></tr>
+<tr>
+<td title='assets.Configuration.ConfigurationAPI()'><b>ConfigurationAPI</b><br>Test class: assets.Configuration</td>
+<td></td>
+<td>1</td>
+<td>assets.Configuration@235ecd9f</td></tr>
+<tr>
+<td title='assets.Loginapi_credentials.LoginAPIwithinvalidcredentials()'><b>LoginAPIwithinvalidcredentials</b><br>Test class: assets.Loginapi_credentials</td>
+<td></td>
+<td>0</td>
+<td>assets.Loginapi_credentials@663c9e7a</td></tr>
+<tr>
+<td title='assets.Loginapi_credentials.LoginAPIwithvalidcredentials()'><b>LoginAPIwithvalidcredentials</b><br>Test class: assets.Loginapi_credentials</td>
+<td></td>
+<td>1</td>
+<td>assets.Loginapi_credentials@663c9e7a</td></tr>
+<tr>
+<td title='assets.Loginapi_credentials.Loginwithinvalidemail()'><b>Loginwithinvalidemail</b><br>Test class: assets.Loginapi_credentials</td>
+<td></td>
+<td>0</td>
+<td>assets.Loginapi_credentials@663c9e7a</td></tr>
+<tr>
+<td title='assets.AssetReportDefect.ReportAssetDefect()'><b>ReportAssetDefect</b><br>Test class: assets.AssetReportDefect</td>
+<td></td>
+<td>0</td>
+<td>assets.AssetReportDefect@3e27ba32</td></tr>
+<tr>
+<td title='assets.AssetResolveDefect.VehicleResolveDefect()'><b>VehicleResolveDefect</b><br>Test class: assets.AssetResolveDefect</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetResolveDefect@7ef82753</td></tr>
+<tr>
+<td title='assets.GetAssetSurveyQuestions.getallasets()'><b>getallasets</b><br>Test class: assets.GetAssetSurveyQuestions</td>
+<td></td>
+<td>9</td>
+<td>assets.GetAssetSurveyQuestions@58cbafc2</td></tr>
+<tr>
+<td title='assets.Getallassets.getallasets()'><b>getallasets</b><br>Test class: assets.Getallassets</td>
+<td></td>
+<td>6</td>
+<td>assets.Getallassets@2034b64c</td></tr>
+<tr>
+<td title='assets.AssetResolveDefect.getallasets()'><b>getallasets</b><br>Test class: assets.AssetResolveDefect</td>
+<td></td>
+<td>7</td>
+<td>assets.AssetResolveDefect@7ef82753</td></tr>
+<tr>
+<td title='assets.AssetTakeoutSubmitCheck.getallasets()'><b>getallasets</b><br>Test class: assets.AssetTakeoutSubmitCheck</td>
+<td></td>
+<td>7</td>
+<td>assets.AssetTakeoutSubmitCheck@202b0582</td></tr>
+<tr>
+<td title='assets.UploadimageAsset.getallasets()'><b>getallasets</b><br>Test class: assets.UploadimageAsset</td>
+<td></td>
+<td>6</td>
+<td>assets.UploadimageAsset@75d3a5e0</td></tr>
+<tr>
+<td title='assets.Getallassetsdetails.getallasets()'><b>getallasets</b><br>Test class: assets.Getallassetsdetails</td>
+<td></td>
+<td>7</td>
+<td>assets.Getallassetsdetails@74d1dc36</td></tr>
+<tr>
+<td title='assets.AssetReturnSubmitCheck.getallasets()'><b>getallasets</b><br>Test class: assets.AssetReturnSubmitCheck</td>
+<td></td>
+<td>7</td>
+<td>assets.AssetReturnSubmitCheck@3b0fe47a</td></tr>
+<tr>
+<td title='assets.AssetReportDefect.getallasets()'><b>getallasets</b><br>Test class: assets.AssetReportDefect</td>
+<td></td>
+<td>10</td>
+<td>assets.AssetReportDefect@3e27ba32</td></tr>
+<tr>
+<td title='assets.GetAssetSurveyQuestions.getallasetsdetails()'><b>getallasetsdetails</b><br>Test class: assets.GetAssetSurveyQuestions</td>
+<td></td>
+<td>1</td>
+<td>assets.GetAssetSurveyQuestions@58cbafc2</td></tr>
+<tr>
+<td title='assets.AssetResolveDefect.getallasetsdetails()'><b>getallasetsdetails</b><br>Test class: assets.AssetResolveDefect</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetResolveDefect@7ef82753</td></tr>
+<tr>
+<td title='assets.AssetTakeoutSubmitCheck.getallasetsdetails()'><b>getallasetsdetails</b><br>Test class: assets.AssetTakeoutSubmitCheck</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetTakeoutSubmitCheck@202b0582</td></tr>
+<tr>
+<td title='assets.UploadimageAsset.getallasetsdetails()'><b>getallasetsdetails</b><br>Test class: assets.UploadimageAsset</td>
+<td></td>
+<td>1</td>
+<td>assets.UploadimageAsset@75d3a5e0</td></tr>
+<tr>
+<td title='assets.Getallassetsdetails.getallasetsdetails()'><b>getallasetsdetails</b><br>Test class: assets.Getallassetsdetails</td>
+<td></td>
+<td>1</td>
+<td>assets.Getallassetsdetails@74d1dc36</td></tr>
+<tr>
+<td title='assets.AssetReturnSubmitCheck.getallasetsdetails()'><b>getallasetsdetails</b><br>Test class: assets.AssetReturnSubmitCheck</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetReturnSubmitCheck@3b0fe47a</td></tr>
+<tr>
+<td title='assets.AssetReportDefect.getallasetsdetails()'><b>getallasetsdetails</b><br>Test class: assets.AssetReportDefect</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetReportDefect@3e27ba32</td></tr>
+<tr>
+<td title='assets.Getalltrailers.getalltrailers()'><b>getalltrailers</b><br>Test class: assets.Getalltrailers</td>
+<td></td>
+<td>1</td>
+<td>assets.Getalltrailers@7161d8d1</td></tr>
+<tr>
+<td title='assets.GetAssetSurveyQuestions.getvehiclesurveyquestions()'><b>getvehiclesurveyquestions</b><br>Test class: assets.GetAssetSurveyQuestions</td>
+<td></td>
+<td>11</td>
+<td>assets.GetAssetSurveyQuestions@58cbafc2</td></tr>
+<tr>
+<td title='assets.Configuration.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.Configuration</td>
+<td></td>
+<td>8</td>
+<td>assets.Configuration@235ecd9f</td></tr>
+<tr>
+<td title='assets.GetAssetSurveyQuestions.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.GetAssetSurveyQuestions</td>
+<td></td>
+<td>1</td>
+<td>assets.GetAssetSurveyQuestions@58cbafc2</td></tr>
+<tr>
+<td title='assets.LoginAPI.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.LoginAPI</td>
+<td></td>
+<td>1</td>
+<td>assets.LoginAPI@1cf6d1be</td></tr>
+<tr>
+<td title='assets.Getallassets.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.Getallassets</td>
+<td></td>
+<td>1</td>
+<td>assets.Getallassets@2034b64c</td></tr>
+<tr>
+<td title='assets.Getalltrailers.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.Getalltrailers</td>
+<td></td>
+<td>1</td>
+<td>assets.Getalltrailers@7161d8d1</td></tr>
+<tr>
+<td title='assets.AssetResolveDefect.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.AssetResolveDefect</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetResolveDefect@7ef82753</td></tr>
+<tr>
+<td title='assets.EntryGateApi.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.EntryGateApi</td>
+<td></td>
+<td>0</td>
+<td>assets.EntryGateApi@1ca3b418</td></tr>
+<tr>
+<td title='assets.Notification_Register.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.Notification_Register</td>
+<td></td>
+<td>1</td>
+<td>assets.Notification_Register@74e28667</td></tr>
+<tr>
+<td title='assets.AssetTakeoutSubmitCheck.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.AssetTakeoutSubmitCheck</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetTakeoutSubmitCheck@202b0582</td></tr>
+<tr>
+<td title='assets.UploadimageAsset.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.UploadimageAsset</td>
+<td></td>
+<td>1</td>
+<td>assets.UploadimageAsset@75d3a5e0</td></tr>
+<tr>
+<td title='assets.Getallassetsdetails.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.Getallassetsdetails</td>
+<td></td>
+<td>1</td>
+<td>assets.Getallassetsdetails@74d1dc36</td></tr>
+<tr>
+<td title='assets.AssetReturnSubmitCheck.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.AssetReturnSubmitCheck</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetReturnSubmitCheck@3b0fe47a</td></tr>
+<tr>
+<td title='assets.AssetReportDefect.postCofiguration()'><b>postCofiguration</b><br>Test class: assets.AssetReportDefect</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetReportDefect@3e27ba32</td></tr>
+<tr>
+<td title='assets.AssetResolveDefect.uploadimage()'><b>uploadimage</b><br>Test class: assets.AssetResolveDefect</td>
+<td></td>
+<td>1</td>
+<td>assets.AssetResolveDefect@7ef82753</td></tr>
+<tr>
+<td title='assets.UploadimageAsset.uploadimage()'><b>uploadimage</b><br>Test class: assets.UploadimageAsset</td>
+<td></td>
+<td>1</td>
+<td>assets.UploadimageAsset@75d3a5e0</td></tr>
+</table><p>
+</body>
+</html>

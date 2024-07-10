@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="DESKTOP-3GH4U15" failures="2" tests="42" name="assets.AssetReportDefect" time="125.15" errors="0" timestamp="1 Jul 2024 09:35:44 GMT">
+  <testcase classname="assets.Configuration" name="postCofiguration" time="8.929"/>
+  <testcase classname="assets.GetAssetSurveyQuestions" name="postCofiguration" time="1.283"/>
+  <testcase classname="assets.LoginAPI" name="postCofiguration" time="1.327"/>
+  <testcase classname="assets.Getallassets" name="postCofiguration" time="1.082"/>
+  <testcase classname="assets.Getalltrailers" name="postCofiguration" time="1.273"/>
+  <testcase classname="assets.AssetResolveDefect" name="postCofiguration" time="1.119"/>
+  <testcase classname="assets.test" name="ConfigurationAPI" time="1.024">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;These credentials do not match our records.&amp;gt; but was:&amp;lt;null&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<These credentials do not match our records.> but was:<null>
+	at assets.test.ConfigurationAPI(test.java:42)
+... Removed 30 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="assets.EntryGateApi" name="postCofiguration" time="0.705"/>
+  <testcase classname="assets.Notification_Register" name="postCofiguration" time="1.234"/>
+  <testcase classname="assets.AssetTakeoutSubmitCheck" name="postCofiguration" time="1.075"/>
+  <testcase classname="assets.UploadimageAsset" name="postCofiguration" time="1.141"/>
+  <testcase classname="assets.Getallassetsdetails" name="postCofiguration" time="1.184"/>
+  <testcase classname="assets.AssetReturnSubmitCheck" name="postCofiguration" time="1.064"/>
+  <testcase classname="assets.AssetReportDefect" name="postCofiguration" time="1.778"/>
+  <testcase classname="assets.Loginapi_credentials" name="LoginAPIwithvalidcredentials" time="1.831"/>
+  <testcase classname="assets.Configuration" name="ConfigurationAPI" time="1.273"/>
+  <testcase classname="assets.GetAssetSurveyQuestions" name="getallasets" time="9.334"/>
+  <testcase classname="assets.Getallassets" name="getallasets" time="6.964"/>
+  <testcase classname="assets.Getalltrailers" name="getalltrailers" time="1.102"/>
+  <testcase classname="assets.AssetResolveDefect" name="getallasets" time="7.788"/>
+  <testcase classname="assets.Notification_Register" name="notificationRegistration" time="0.939">
+    <failure type="java.lang.AssertionError" message="Received a 200 response expected:&amp;lt;200&amp;gt; but was:&amp;lt;400&amp;gt;">
+      <![CDATA[java.lang.AssertionError: Received a 200 response expected:<200> but was:<400>
+	at assets.Notification_Register.notificationRegistration(Notification_Register.java:39)
+... Removed 29 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="assets.AssetTakeoutSubmitCheck" name="getallasets" time="7.104"/>
+  <testcase classname="assets.UploadimageAsset" name="getallasets" time="6.994"/>
+  <testcase classname="assets.Getallassetsdetails" name="getallasets" time="7.831"/>
+  <testcase classname="assets.AssetReturnSubmitCheck" name="getallasets" time="7.693"/>
+  <testcase classname="assets.AssetReportDefect" name="getallasets" time="10.839"/>
+  <testcase classname="assets.Loginapi_credentials" name="LoginAPIwithinvalidcredentials" time="0.916"/>
+  <testcase classname="assets.GetAssetSurveyQuestions" name="getallasetsdetails" time="1.525"/>
+  <testcase classname="assets.AssetResolveDefect" name="getallasetsdetails" time="1.552"/>
+  <testcase classname="assets.AssetTakeoutSubmitCheck" name="getallasetsdetails" time="1.764"/>
+  <testcase classname="assets.UploadimageAsset" name="getallasetsdetails" time="1.432"/>
+  <testcase classname="assets.Getallassetsdetails" name="getallasetsdetails" time="1.49"/>
+  <testcase classname="assets.AssetReturnSubmitCheck" name="getallasetsdetails" time="1.463"/>
+  <testcase classname="assets.AssetReportDefect" name="getallasetsdetails" time="1.484"/>
+  <testcase classname="assets.Loginapi_credentials" name="Loginwithinvalidemail" time="0.902"/>
+  <testcase classname="assets.GetAssetSurveyQuestions" name="getvehiclesurveyquestions" time="11.657"/>
+  <testcase classname="assets.AssetResolveDefect" name="uploadimage" time="1.616"/>
+  <testcase classname="assets.UploadimageAsset" name="uploadimage" time="1.471"/>
+  <testcase classname="assets.AssetResolveDefect" name="VehicleResolveDefect" time="1.146"/>
+  <testcase classname="assets.AssetTakeoutSubmitCheck" name="Assettakeoutsubmitcheck" time="0.937"/>
+  <testcase classname="assets.AssetReturnSubmitCheck" name="Assettakeoutsubmitcheck" time="0.866"/>
+  <testcase classname="assets.AssetReportDefect" name="ReportAssetDefect" time="0.915"/>
+</testsuite>
